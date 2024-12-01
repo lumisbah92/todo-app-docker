@@ -1,0 +1,33 @@
+Frontend: 
+	docker build -t misbahuddintareq/todo-frontend .
+	docker run -p 3000:3000 misbahuddintareq/todo-frontend
+
+Backend:
+	docker build -t misbahuddintareq/todo-backend .
+	docker run -p 4000:4000 misbahuddintareq/todo-backend
+
+Docker push:
+1. docker login	
+2. docker info	
+3. docker logout
+
+-----------
+
+4. docker images - list of created images
+5. docker ps - list of running images
+6. docker ps -a - list of unning images including stopped ones
+7. docker push misbahuddintareq/todo-backend
+8. docker push misbahuddintareq/todo-frontend
+
+---------------
+
+stop and remove container
+docker stop <container_id_or_name>
+docker rm <container_id_or_name>
+
+two container version, remove one by image id
+docker rmi 595d3077164c
+
+--------------------
+
+	
