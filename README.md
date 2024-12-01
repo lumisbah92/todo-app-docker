@@ -28,49 +28,40 @@ A simple Todo application with a **frontend** built using **React.js** and a **b
    ```bash
    git clone https://github.com/yourusername/todo-application.git
    cd todo-application
-Build the Docker images:
 
-To build the frontend image:
+2. Build the Docker images:
+   
+  To build the frontend image:
+  ```bash
+  docker build -t misbahuddintareq/todo-frontend ./todo-frontend
+  ```
+  To build the backend image:
+  ```bash
+  docker build -t misbahuddintareq/todo-backend ./todo-backend
+  ```
+3. Run the Docker containers:
 
-```bash
-docker build -t misbahuddintareq/todo-frontend ./todo-frontend
-```
+  To run the frontend container on port 3000:
+  ```bash
+  docker run -p 3000:3000 misbahuddintareq/todo-frontend
+  ```
+  To run the backend container on port 4000:
+  ```bash
+  docker run -p 4000:4000 misbahuddintareq/todo-backend
+  ```
 
-To build the backend image:
+4. Open your browser and visit the following URLs:
 
-```bash
-docker build -t misbahuddintareq/todo-backend ./todo-backend
-```
-Run the Docker containers:
+  Frontend: http://localhost:3000
+  Backend: http://localhost:4000
 
-To run the frontend container on port 3000:
-
-```bash
-docker run -p 3000:3000 misbahuddintareq/todo-frontend
-```
-
-To run the backend container on port 4000:
-
-```bash
-docker run -p 4000:4000 misbahuddintareq/todo-backend
-```
-
-Open your browser and visit the following URLs:
-
-Frontend: http://localhost:3000
-
-Backend: http://localhost:4000
-
-Pushing Docker Images to Docker Hub
-First, tag your images with your Docker Hub username:
-
+### Pushing Docker Images to Docker Hub
+1. First, tag your images with your Docker Hub username:
 ```bash
 docker tag misbahuddintareq/todo-frontend misbahuddintareq/todo-frontend
 docker tag misbahuddintareq/todo-backend misbahuddintareq/todo-backend
 ```
-
-Push the images to Docker Hub:
-
+2. Push the images to Docker Hub:
 ```bash
 docker push misbahuddintareq/todo-frontend
 docker push misbahuddintareq/todo-backend
