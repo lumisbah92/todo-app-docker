@@ -59,11 +59,11 @@ A simple Todo application with a **frontend** built using **React.js** and a **b
 ### Pushing Docker Images to Docker Hub
 **1. First, tag your images with your Docker Hub username:**
   ```bash
-  docker tag misbahuddintareq/todo-frontend misbahuddintareq/todo-frontend
-  docker tag misbahuddintareq/todo-backend misbahuddintareq/todo-backend
+  docker tag misbahuddintareq/todo-frontend:latest yourusername/todo-frontend:latest
+  docker tag misbahuddintareq/todo-backend:latest yourusername/todo-backend:latest
   ```
 **2. Push the images to Docker Hub:**
   ```bash
-  docker push misbahuddintareq/todo-frontend
-  docker push misbahuddintareq/todo-backend
+  docker push yourusername/todo-frontend:latest
+  docker push yourusername/todo-backend:latest
   ```
