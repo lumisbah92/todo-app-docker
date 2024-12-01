@@ -26,7 +26,7 @@ A simple Todo application with a **frontend** built using **React.js** and a **b
 **1. Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/todo-application.git
+   git clone https://github.com/lumisbah92/todo-app-docker.git
    cd todo-application
    ```
 
