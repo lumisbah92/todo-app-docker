@@ -1,0 +1,8 @@
+Create a Key Pair: aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > MyKeyPair.pem
+
+Set File Permissions:
+    icacls MyKeyPair.pem /inheritance:r
+    icacls MyKeyPair.pem /grant:r "$($env:USERNAME):(R)"
+
+
+// 

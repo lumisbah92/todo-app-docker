@@ -1,0 +1,3 @@
+name: lab3-vpc-project
+runtime: nodejs
+description: Pulumi Lab 3- Launch EC2 instances in public and private subnets
